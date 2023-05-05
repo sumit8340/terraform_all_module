@@ -33,7 +33,7 @@ resource "azurerm_virtual_machine" "myvm" {
 resource "azurerm_network_interface" "vm_nic" {
   name                = "vm_nic"
   location            = "East US"
-  resource_group_name = "myResourceGroup"
+  resource_group_name = "myrg"
 
   ip_configuration {
     name                          = "vm_ip_config"
